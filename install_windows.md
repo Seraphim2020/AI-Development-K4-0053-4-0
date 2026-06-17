@@ -54,7 +54,7 @@ python -m pip install --upgrade pip
 ## 5. Pakete installieren
 
 ```cmd
-pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
+pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib nltk spacy simpletransformers torch
 ```
 
 ## Kompaktblock für PowerShell
@@ -63,7 +63,9 @@ pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
 py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
+pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib nltk spacy simpletransformers torch
+python -m nltk.downloader punkt_tab
+python -m spacy download de_core_news_sm
 ```
 
 ## Kompaktblock für CMD
@@ -72,5 +74,7 @@ pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 python -m pip install --upgrade pip
-pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
+pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib nltk spacy simpletransformers torch
+python -m nltk.downloader punkt_tab
+python -m spacy download de_core_news_sm
 ```

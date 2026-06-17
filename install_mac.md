@@ -47,7 +47,7 @@ python -m pip install --upgrade pip
 ## 5. Pakete installieren
 
 ```bash
-pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
+pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib nltk spacy simpletransformers torch
 ```
 
 ## Kompaktblock für Bash / Zsh
@@ -56,5 +56,7 @@ pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib
+pip install numpy tensorflow python-dotenv scikit-learn pandas matplotlib nltk spacy simpletransformers torch
+python -m nltk.downloader punkt_tab
+python -m spacy download de_core_news_sm
 ```
